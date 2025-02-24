@@ -1,0 +1,99 @@
+[data-theme="light"] {
+	--background: linear-gradient(135deg, #f0f4ff, #e5ebfb);
+	--text: #2c3e50;
+	--primary: #3498db;
+	--secondary: #8f7bbe;
+	--accent: #f1c40f;
+	--success: #2ecc71;
+	--error: #e74c3c;
+	--gradient: linear-gradient(90deg, #3498db, #9b59b6);
+}
+[data-theme="dark"] {
+	--background: #2c3e50;
+	--text: #ecf0f1;
+	--primary: #2980b9;
+	--secondary: #76659f;
+	--success: #27ae60;
+	--error: #c0392b;
+	--gradient: linear-gradient(90deg, #2980b9, #8e44ad);
+}
+body,
+html {
+	height: 100%;
+	background-color: var(--background);
+	color: var(--text);
+}
+#root {
+	min-height: 100%;
+	background-color: var(--background);
+	color: var(--text);
+	padding-bottom: 125px;
+}
+.navbar {
+	background-color: var(--background);
+	color: var(--text);
+	padding-bottom: 125px;
+}
+.btn-primary {
+	background-color: var(--primary);
+	border-color: var(--primary);
+	color: var(--text);
+}
+.btn-primary:hover {
+	background-color: var(--secondary);
+	border-color: var(--secondary);
+	color: var(--text);
+}
+.btn-outline-success {
+	color: var(--success);
+	border-color: var(--success);
+}
+.btn-outline-success:hover {
+	background-color: var(--success);
+	color: var(--text);
+}
+.form-control {
+	background-color: var(--background) !important;
+	color: var(--text) !important;
+	border: 1px solid var(--secondary) !important;
+}
+.form-control::placeholder {
+	color: var(--text) !important;
+}
+.search-container .search-btn {
+	color: var(--primary);
+}
+.search-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.search-container .form-control {
+	width: 100%;
+	padding-right: 40px;
+}
+.search-container .search-btn {
+	position: absolute;
+	right: 10px;
+	outline: none;
+	border: none;
+	background: none;
+	padding: 0;
+}
+.card {
+	border-radius: 20px;
+	transition: transform 0.15s ease-in;
+}
+.card:hover {
+	transform: translateY(-10px);
+	cursor: pointer;
+	box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+.card-btn {
+	transition: box-shadow 0.2s ease-in-out;
+	will-change: transform;
+}
+.card-btn:hover {
+	transform: scale(1.2);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}

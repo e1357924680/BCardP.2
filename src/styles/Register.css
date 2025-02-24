@@ -1,0 +1,97 @@
+.register-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: var(--background);
+	color: var(--text);
+	padding: 20px;
+}
+
+.register-form {
+	border-radius: 10px;
+	padding: 30px;
+	max-width: 600px;
+	width: 100%;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+	text-align: center;
+	font-size: 1.8rem;
+	color: var(--text);
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+
+.form-section {
+	margin-bottom: 20px;
+}
+
+.form-section h4 {
+	font-size: 1.2rem;
+	color: var(--secondary);
+	margin-bottom: 15px;
+	border-bottom: 2px solid var(--accent);
+	padding-bottom: 5px;
+}
+
+.form-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group label {
+	font-size: 0.9rem;
+	color: var(--text);
+	margin-bottom: 5px;
+}
+
+.form-group input {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 0.95rem;
+	background-color: var(--background);
+	color: var(--text);
+}
+
+.form-group input:focus {
+	border-color: var(--primary);
+	outline: none;
+	box-shadow: 0 0 4px rgba(52, 152, 219, 0.5);
+}
+
+.error-message {
+	color: var(--error);
+	font-size: 0.8rem;
+	margin-top: 5px;
+}
+
+#isBusiness {
+	margin-right: 10px;
+}
+
+.form-actions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.secondary-link {
+	font-size: 0.9rem;
+	color: var(--secondary);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.secondary-link:hover {
+	color: var(--accent);
+}
